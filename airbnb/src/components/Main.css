@@ -1,0 +1,8 @@
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    margin: 10px;
+}
