@@ -1,0 +1,29 @@
+div {
+    background-color: rgb(30, 29, 29);
+    height: 81vh;
+    /* background-image: url(./5g_Tj-HR.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+*/
+}
+
+h1 {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+li {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+li::marker {
+    color: rgb(47, 164, 203);
+    font-size: 1.rem;
+}

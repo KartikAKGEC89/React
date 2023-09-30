@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    background-color: black;
+    height: 70px;
+    padding: 30px 25px;
+}
+
+nav > h3 {
+    margin-right: auto;
+    color: aqua;
+    font-size: 24px;
+}
+
+nav > h4 {
+    color: #ffff;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 5%;
+    margin: 5px;
+}
