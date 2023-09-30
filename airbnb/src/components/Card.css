@@ -1,0 +1,29 @@
+.card {
+border: 1px;
+border-radius: 1px;
+margin: 8px;
+}
+.card--image {
+width:  200px ;
+height: 235px ;
+top: 521px ;
+left: 30px ;
+border-radius: 9px
+}
+.card--star {
+width: 16px;
+}
+.card--stats {
+    padding: 10px;
+}
+p {
+font-size: 20px;
+}
+.gray {
+ color: gray;
+ font-size: 15px;
+}
+.bold {
+color: black;
+font-weight: bold;
+}
