@@ -6,6 +6,7 @@ import Plus from './components/Plus';
 import Isgoingout from './components/Isgoingout';
 import Additem from './components/Additem';
 import Image from './components/Image';
+import Boxesdata from './components/Boxesdata';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Isgoingout />
     <Additem />
     <Image />
+  <Boxesdata />
   </React.StrictMode>
 );
 
