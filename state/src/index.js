@@ -16,7 +16,7 @@ root.render(
     <Isgoingout />
     <Additem />
     <Image />
-  <Boxesdata />
+    <Boxesdata />
   </React.StrictMode>
 );
 

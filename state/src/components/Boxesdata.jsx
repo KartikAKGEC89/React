@@ -1,16 +1,19 @@
 import React from 'react'
 import boxes from '../data/boxes'
 import './Box.css'
+import Box from './Box'
 
 const Boxesdata = () => {
-  const [box, setBox] = React.useState(boxes)
+  const [box] = React.useState(boxes)
+
 
   const squareElements = box.map(square => (
-        <div className="box" key={square.id}></div>
-    ))
+    <Box key={square.id} on={square.on} />
+   
+  ))
   return (
     <div>
-      { squareElements}
+      <button >{ squareElements}</button>
     </div>
   )
 }
