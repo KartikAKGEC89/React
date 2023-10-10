@@ -14,9 +14,9 @@ function toggle() {
           setInto( !into)
     }
     return (
-    <div>
+    <div  className="box">
         {/* <div style={styles} className="box" onClick={() => togglee(id)}></div> */}
-        <div style={styles} className="box" onClick={toggle}></div>
+        <div style={styles}  className="box" onClick={toggle}></div>
     </div>
   )
 }

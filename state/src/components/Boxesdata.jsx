@@ -27,7 +27,7 @@ const Boxesdata = () => {
 
   const squareElements = box.map(square => (
     // <Box key={square.id} on={square.on} id={square.id} toggle={togglee} />
-    <Box key={square.id} on={square.on} id={square.id} />
+    <Box key={square.id} on={square.on} id={square.id} className="box" />
    
   ))
   return (
