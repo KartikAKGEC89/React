@@ -12,7 +12,7 @@ const Jokes = ({ img, heading }) => {
       <img src={img} alt='Jokes' />
       {/* Important */}
       {isShown && <h2> {heading} </h2>}
-      <button onClick={toggle}> Joke </button>
+      <button onClick={toggle}>{ isShown ? 'Hide Joke' : 'Show Joke' }</button>
     </div>
   )
 }
