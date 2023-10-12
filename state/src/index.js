@@ -7,6 +7,7 @@ import Isgoingout from './components/Isgoingout';
 import Additem from './components/Additem';
 import Image from './components/Image';
 import Boxesdata from './components/Boxesdata';
+import Messages from './components/Messages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Additem />
     <Image />
     <Boxesdata />
+    <Messages />
   </React.StrictMode>
 );
 
