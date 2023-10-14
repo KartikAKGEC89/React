@@ -1,20 +1,22 @@
 import React from 'react'
 
 const Form = () => {
-    const [name, setName] = React.useState({firstname: "", lastName: "", email:""})
+    const [name, setName] = React.useState({firstname: "", lastName: "", email:"", comments:"", isChecked: false})
     // const [ lastName, setLastName] = React.useState("")
     console.log(name)
     // console.log(lastName)
 
-    function handledata(event) {
+  function handledata(event) {
+       const {name, value, type, checked} = event.target
       setName(prevname => {
         // return prevname = {
         //   ...prevname,
         //   [event.target.name]: event.target.value
         // }
+       
         return {
           ...prevname,
-          [event.target.name]: event.target.value
+          [name]: type === "checkbox" ? checked : value
           }
         })
     }
@@ -27,6 +29,14 @@ const Form = () => {
       <input type='text' placeholder='name' onChange={handledata} name='firstname' value={name.firstname}/> 
       <input type='text' placeholder='lastname' onChange={handledata} name='lastName' value={name.lastName}/>
       <input type='email' placeholder='email' onChange={handledata} name='email' value={name.email} />
+      <textarea name='comments' placeholder='comment plz...' onChange={handledata} value={name.comments}/>
+      <input type='checkbox'
+        id='isChecked'
+        name='isChecked'
+        checked={name.isChecked}
+        onChange={handledata}
+       />
+      <label htmlFor='isChecked'>Is Checked</label>
     </div>
   )
 }
