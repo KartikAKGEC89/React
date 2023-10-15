@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Form = () => {
-    const [name, setName] = React.useState({firstname: "", lastName: "", email:"", comments:"", isChecked: false})
+    const [name, setName] = React.useState({firstname: "", lastName: "", email:"", comments:"", isChecked: false, employee:""})
     // const [ lastName, setLastName] = React.useState("")
     console.log(name)
     // console.log(lastName)
@@ -37,6 +37,31 @@ const Form = () => {
         onChange={handledata}
        />
       <label htmlFor='isChecked'>Is Checked</label>
+
+      <fieldset>
+      <legend>Working or not</legend>
+
+      <input type='radio'
+        id='employed'
+        name='employee'
+        value='Working'
+        checked={name.employee === "Working"}
+        onChange={handledata}
+      />
+      <label for='employed'>Working</label>
+      <br />
+      
+        <input
+        type='radio'
+        id='parttime'
+        name='employee'
+        value='PartTime'
+        checked={name.employee === "PartTime"}
+        onChange={handledata}
+      />
+      <label for='parttime'>Part-Time</label>
+        <br />
+        </fieldset>
     </div>
   )
 }
