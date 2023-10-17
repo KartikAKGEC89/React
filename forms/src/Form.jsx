@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Form = () => {
-    const [name, setName] = React.useState({firstname: "", lastName: "", email:"", comments:"", isChecked: false, employee:""})
+    const [name, setName] = React.useState({firstname: "", lastName: "", email:"", comments:"", isChecked: false, employee:"", favColour:""})
     // const [ lastName, setLastName] = React.useState("")
-    console.log(name)
+    // console.log(name)
     // console.log(lastName)
 
   function handledata(event) {
@@ -21,11 +21,15 @@ const Form = () => {
         })
     }
 
-    // function handlelast(event) {
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(name)
+  }
+  // function handlelast(event) {
     //     setLastName(event.target.value)
     // }
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <input type='text' placeholder='name' onChange={handledata} name='firstname' value={name.firstname}/> 
       <input type='text' placeholder='lastname' onChange={handledata} name='lastName' value={name.lastName}/>
       <input type='email' placeholder='email' onChange={handledata} name='email' value={name.email} />
@@ -48,7 +52,7 @@ const Form = () => {
         checked={name.employee === "Working"}
         onChange={handledata}
       />
-      <label for='employed'>Working</label>
+      <label htmlFor='employed'>Working</label>
       <br />
       
         <input
@@ -59,10 +63,28 @@ const Form = () => {
         checked={name.employee === "PartTime"}
         onChange={handledata}
       />
-      <label for='parttime'>Part-Time</label>
+      <label htmlFor='parttime'>Part-Time</label>
         <br />
-        </fieldset>
-    </div>
+      </fieldset>
+      
+
+      <label htmlFor="favColour">What is your favColour</label>
+      <select
+        id='favColour'
+        value={name.favColour}
+        onChange={handledata}
+        name='favColour'
+      >
+        <option value="" > -- Choose --</option>
+        <option value="Blue" > Blue </option>
+        <option value="Red" > Red </option>
+        <option value="White" > White </option>
+
+      </select>
+
+      <br />
+      <button>Submit</button>
+    </form>
   )
 }
 
