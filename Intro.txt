@@ -570,3 +570,25 @@ be saved in state. Other form elements use the `value` property instead.
    a form submit?
 - Can watch for the submit with an onSubmit handler on the `form` element.
 - Can trigger the form submit with a button click.
+
+
+-------- Calling an API ------------- 
+
+
+import React from "react"
+
+export default function App() {
+    const [starWarsData, setStarWarsData] = React.useState({})
+    
+    // console.log("Component rendered")
+    
+    fetch("https://swapi.dev/api/people/1")
+        .then(res => res.json())
+        .then(data => setStarWarsData(data))
+    
+    return (
+        <div>
+            <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
+        </div>
+    )
+}

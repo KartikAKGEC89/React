@@ -24,6 +24,9 @@ const Form = () => {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(name)
+    if (name.firstname === name.lastName) {
+      alert("successfully matched")
+    }
   }
   // function handlelast(event) {
     //     setLastName(event.target.value)
