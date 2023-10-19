@@ -22,7 +22,7 @@ const App = () => {
       <button onClick={handleclick}>{isImportant}</button>
       <br />
       <br />
-      <button onClick={toggle}> Tell me size of window { <Window />}</button>
+      <button onClick={toggle}> Tell me size of window { width && <Window />}</button>
     </div>
   )
 }
