@@ -8,7 +8,11 @@ const Plus = () => {
     }
     function minus() {
         setPlus(plus-1)
-    }
+  }
+  
+  React.useEffect(function () {
+    console.log("Effect Run")
+  }, [0])
 
     // const [minus, setMinus] = React.useState(0)
     
