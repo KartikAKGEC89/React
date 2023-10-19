@@ -12,7 +12,7 @@ const Plus = () => {
   
   React.useEffect(function () {
     console.log("Effect Run")
-  }, [0])
+  }, [])
 
     // const [minus, setMinus] = React.useState(0)
     

@@ -5,7 +5,7 @@ const Isgoingout = () => {
     
     function Goingout() {
         setIsgoingout(!Isgoingout)
-    }
+  }
   return (
     <div>
           <button onClick={Goingout}>{Isgoingout ? "yes" : "no"}</button>
