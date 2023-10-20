@@ -1,9 +1,11 @@
 import React from 'react'
 import "./Main.css"
 
-const Main = () => {
+const Main = ({darkmode}) => {
   return (
-    <div>
+    <div
+    className={darkmode? "dark" : ""}
+    >
           <h1>Fun Facts about React</h1>
           <ul>
           <li>Was first released in 2013</li>
