@@ -1,0 +1,46 @@
+.addcontainer  {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 5px;
+}
+.form-control {
+    margin: 5px;
+    padding: 2px;
+}
+.addbutton {
+    padding: 5px;
+    font: 10px;
+    background-color: red;
+    border-radius: 2px;
+    margin: 4px;
+    cursor: pointer;
+}
+.addbutton:hover {
+    box-shadow: 2px;
+}
+.addbutton:active {
+    background-color: green;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.card {
+    background-color: rgb(195, 238, 238);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+}
+.btn-delete {
+    background-color: black;
+    color: white;
+    font: bolder;
+    margin: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
