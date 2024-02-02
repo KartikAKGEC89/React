@@ -2,6 +2,7 @@ import React from 'react'
 import Textanimation from './components/textanimation.jsx'
 import Boxanimation from './components/boxanimation.jsx'
 import Dragableanimation from './components/Dragableanimation.jsx'
+import Multiplecomponent from './components/Multiplecomponent.jsx'
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <Textanimation />
       <Boxanimation />
       <Dragableanimation />
+      <br />
+      <Multiplecomponent />
     </>
   )
 }
