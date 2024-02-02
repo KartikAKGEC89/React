@@ -1,8 +1,12 @@
 import React from 'react'
+import Textanimation from './components/textanimation.jsx'
 
 const App = () => {
   return (
-    <div>Framer Motion</div>
+    <>
+      <h1>Framer Motion Package use</h1>
+      <Textanimation />
+    </>
   )
 }
 
